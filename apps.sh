@@ -3,7 +3,7 @@
 cd $(dirname $0)
 . ./log.sh
 
-dockutil=~/Code/dockutil/scripts/dockutil
+dockutil=~/code/dockutil/scripts/dockutil
 
 function install_slack {
   log_install "Slack"
@@ -163,23 +163,14 @@ add_app_to_dock "/Applications/Atom.app"
 
 add_app_to_dock "/Applications/Utilities/Terminal.app"
 
-install_intellij
-add_app_to_dock "/Applications/IntelliJ IDEA CE.app"
-
 install_sourcetree
 add_app_to_dock "/Applications/SourceTree.app"
-
-install_slack
-add_app_to_dock "/Applications/Slack.app"
 
 add_app_to_dock "/Applications/System Preferences.app"
 
 add_folder_to_dock "$HOME/Downloads"
 add_folder_to_dock "$HOME/Documents"
 add_folder_to_dock "/Applications"
-
-install_robomongo
-install_docker
 
 restart_dock
 
