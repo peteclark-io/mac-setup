@@ -29,6 +29,7 @@ brew cask install ngrok
 brew install nodejs
 brew install mutt
 brew install jq
+brew install python
 
 install_dockutil
 install_go
